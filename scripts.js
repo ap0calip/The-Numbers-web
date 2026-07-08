@@ -57,7 +57,7 @@ window.onload = function () {
     if (currentPage === 'instruction.html') {
         window.updateSelector();
     }
-    else if (currentPage === 'the_numbers.html') {
+    else if (currentPage === 'index.html') {
         if (window.saved === 'no') {
             window.location.href = './instruction.html';
         } else {
@@ -93,7 +93,7 @@ function handleResize() {
             // if (window.innerHeight < window.innerWidth) window.decreaseAllFontSizes()
         }
     }
-    else if (currentPage === 'the_numbers.html') {
+    else if (currentPage === 'index.html') {
         const container = document.querySelector('.numbers-container');
         const additionalContainer = document.querySelector('.additional-container');
         const imageBorderLeft = document.querySelector('.imgBorderLeft');
@@ -142,7 +142,7 @@ window.startGame = function () {
     window.updateCookies();
 
     // Redirect to the game page
-    window.location.href = './the_numbers.html';
+    window.location.href = './index.html';
 }
 
 //-----------------------------------------------------------------
